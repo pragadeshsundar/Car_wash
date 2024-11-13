@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Car Wash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Wash</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+            
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmationMessage"></div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Wash Service. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Set the minimum date to today
+        const today = new Date().toISOString().split('T')[0]; // Format YYYY-MM-DD
+        document.getElementById('date').setAttribute('min', today);
+    </script>
+</body>
+</html>

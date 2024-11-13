@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    font-weight: bold;
+}
+html, body {
+    height: 100%; /* Ensure full height for proper footer positioning */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+main {
+    flex: 1; 
+}
+footer {
+    text-align: center; /* Center text in footer */
+    padding: 10px; /* Add some padding */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+}

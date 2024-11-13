@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack elements vertically */
+            height: 100vh; /* Full height for proper footer positioning */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main Content Styles */
+        main {
+            flex: 1; 
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10b0px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        /* Contact Information Styles */
+        .contact-info {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-info h3 {
+            display: inline; /* Inline display for headings */
+            margin: 0; /* Remove margin for consistent spacing */
+            font-weight: bold; /* Make headings bold */
+        }
+
+        .contact-info span {
+            font-weight: normal; /* Normal weight for detail text */
+            margin-left: 10px; /* Space between heading and detail */
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333; /* Same as header for consistency */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-info">
+            <h3>Name:</h3>
+            <span>Pragadesh</span><br>
+            <h3>Email:</h3>
+            <span>pragadesh121@gmail.com</span><br>
+            <h3>Mobile:</h3>
+            <span>9829323842</span>
+        </div>
+        <div id="confirmationMessage"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Wash Service. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script> <!-- Link to your JavaScript file for handling the contact form -->
+</body>
+</html>
